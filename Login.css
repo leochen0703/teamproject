@@ -1,0 +1,103 @@
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* 设置整个页面高度为视窗高度 */
+  }
+  
+  .background {
+    width: 100%;
+    height: 100vh; /* 设置粉红色到淡蓝色区域的高度为70%的视窗高度 */
+    background: linear-gradient(to bottom, rgb(247, 134, 153), rgb(53, 190, 236)); /* 使用线性渐变背景 */
+  }
+  
+  .darkblue-area {
+    width: 100%;
+    height: 10vh; /* 设置黑色区域的高度为30%的视窗高度 */
+    background-color: rgb(0, 2, 110);
+  }
+
+
+/*********************/
+
+.logo {
+  position: absolute;
+  top: 13px; /* 距離頂部的距離 */
+  right: 23px; /* 距離右側的距離 */
+  width: 223px; /* 調整 logo 的大小 */
+  height: 88px;
+  /* 其他樣式，例如邊框、邊距等 */
+}
+
+/******************/
+
+.login-container {
+    background-color: rgba(139, 199, 240, 0.312); /* 半透明白色背景 */
+    border: 1px solid #499ef2; /* 邊框 */
+    padding: 40px 100px;  /* 內邊距 */
+    border-radius: 5px; /* 圓角 */  
+    position: absolute;
+    top:20%;
+    left:35%;
+  }
+
+
+    .signin {
+        background-color: transparent; /* 設置按鈕內的背景為透明 */
+        color: #9019d4; /* 設置文本顏色 */
+        border: 2px solid #9019d4; /* 設置邊框，此處為藍色 */
+        padding: 10px 25px; /* 設置內邊距 */
+        border-radius: 10px; /* 設置圓角 */
+        font-size: 20px; /* 設置字體大小 */
+        cursor: pointer; /* 添加鼠標指針 */
+        text-decoration: none; /* 移除默認的文本下劃線 */
+        display: inline-block; /* 設置為行內塊元素 */
+    }
+
+    .signin:hover {
+        background-color: #9019d4; /* 滑鼠懸停時，設置背景顏色 */
+        color: white; /* 滑鼠懸停時，設置文本顏色 */
+    }
+    /**********************/
+
+    
+    .input-group input[type="text"],
+    .input-group input[type="password"],
+    .input-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      border-radius: 10px; /* 設置圓角 */
+    }
+    
+    .input-group input[type="text"]:focus,
+    .input-group input[type="password"]:focus,
+    .input-group select:focus {
+      outline: none;
+      border-color: #5c6ac4;
+    }
+    
+    /**********************/
+
+    .error-message {
+      color: red;
+      font-size: 14px;
+    }
+
+    /*************/
+    .forget-password {
+      display: block;
+      text-decoration: none;
+      color: #333; /* 修改链接颜色 */
+      font-size: 14px; /* 修改字体大小 */
+      margin-top: 10px; /* 调整与登录按钮的间距 */
+    }
+    
+    .forget-password:hover {
+      text-decoration: underline; /* 悬停时添加下划线效果 */
+      color: #555; /* 修改悬停颜色 */
+    }
+    
+    

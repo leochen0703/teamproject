@@ -1,0 +1,44 @@
+.menu-container {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #FF69B4, #87CEEB);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu-items {
+  display: none; /* 默认隐藏 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.menu-items.visible {
+  display: block; /* 使用 .visible 类名显示 */
+}
+
+.menu-items button {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-items button:hover {
+  background-color: #f0f0f0;
+}

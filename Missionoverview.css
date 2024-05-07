@@ -1,0 +1,198 @@
+.menu-container {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #f2a8ff, #87CEEB);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .menu-items {
+    position: absolute;
+    height: 150vh;
+    width: 300px; /* 寬度 */
+    background-color: #a4a1a1; 
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+  /* .menu-items {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #656565;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  } */
+  
+  
+  .menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding:20px;
+  }
+  
+  .menu-items button {
+    display: block;
+    width: fit-content; /* 讓按鈕大小僅包裹文字 */
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    text-align: middle;
+    cursor: pointer;
+    border-bottom: 2px solid #9f279b; /* 加底線 */
+    margin-bottom: 4px;
+  }
+  
+  .menu-items button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* 设置整个页面高度为视窗高度 */
+  }
+  
+  .background {
+    width: 100%;
+    height: 100vh; /* 设置粉红色到淡蓝色区域的高度为70%的视窗高度 */
+    background: linear-gradient(to bottom, rgb(247, 134, 153), rgb(53, 190, 236)); /* 使用线性渐变背景 */
+  }
+  
+  .darkblue-area {
+    width: 100%;
+    height: 20vh; /* 设置黑色区域的高度为30%的视窗高度 */
+    background-color: rgb(0, 2, 110);
+  }
+
+/****************************/
+
+.avatar {
+  width: 100px; /* 調整頭像的大小 */
+  height: 100px;
+  border-radius: 50%; /* 使頭像變成圓形 */
+  margin-right: 10px; /* 調整頭像和 logout 按鈕之間的間距 */
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white; /* 文字顏色 */
+  cursor: pointer;
+  font-size: 16px; /* 文字大小 */
+  outline: none;
+}
+
+.logout-button:hover {
+  text-decoration: underline; /* 滑鼠懸停時添加下劃線 */
+}
+
+/*********************/
+
+.logo {
+  position: absolute;
+  top: 13px; /* 距離頂部的距離 */
+  right: 23px; /* 距離右側的距離 */
+  width: 223px; /* 調整 logo 的大小 */
+  height: 88px;
+  /* 其他樣式，例如邊框、邊距等 */
+}
+
+/************/
+
+.mission-container {
+    padding: 2px;
+    background-color: #f0f0f0; /* 背景顏色 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+    overflow: auto; /* 添加滾動條，如果表格內容超出容器範圍 */
+    /* max-width: 1000px; 最大寬度 */
+    /* margin: 0 auto; 水平居中 */
+  }
+
+  .unit-table {
+  width: 100%; /* 表格寬度設為100% */
+  border-collapse: collapse; /* 折疊邊框 */
+}
+
+.unit-table th,
+.unit-table td {
+  padding: 10px; /* 單元格內邊距 */
+  border-bottom: 1px solid #ddd; /* 底部邊框 */
+}
+
+.unit-table th {
+  background-color: #f2f2f2; /* 表頭背景顏色 */
+  font-weight: bold; /* 加粗字體 */
+  text-align: left; /* 文字左對齊 */
+}
+
+.unit-table td {
+  text-align: left; /* 文字左對齊 */
+}
+
+/******************/
+
+
+  
+  .table-header button {
+    padding: 5px 10px;
+    background-color: #080808; /* 添加用户按钮背景色 */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .menu-items a {
+    display: block; /* 将链接显示为块级元素 */
+    margin-bottom: 50px; /* 设置链接之间的垂直间距 */
+  }
+
+  /*********************/
+
+  .table-header {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  .input-wrapper input {
+    padding-left: 35px; /* 调整输入框左侧的内边距 */
+  }
+  
+  .input-wrapper .search-icon {
+    position: absolute;
+    left: 8px; /* 调整搜索图标的位置 */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .add-button {
+    margin-left: 10px; /* 调整按钮与输入框的间距 */
+  }
+  
+  /*****************/
+  
+  .menu-items button.logout-btn {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid transparent; /* 添加透明边框 */
+    cursor: pointer;
+    padding: 10px 10px;
+    text-align: left;
+  }
+  
+  .menu-items button.logout-btn:hover {
+    background-color: #f0f0f0;
+    border-color: #171212; 
+    transition: background-color 1s ease, border-color 1s ease; /* 过渡效果 */
+  }
